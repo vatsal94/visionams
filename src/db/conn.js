@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-mongoose.connect('mongodb+srv://root:root@cluster0.yoleh.mongodb.net/Cluster0?retryWrites=true&w=majority',{
+mongoose.connect('mongodb+srv://root:ZakD0iMDuPmOIeuU@cluster0.yoleh.mongodb.net/Cluster0?retryWrites=true&w=majority',{
     useNewUrlParser:true,
     useUnifiedTopology: true,
     useCreateIndex:true
