@@ -52,6 +52,7 @@ app.post('/Register', (req, res) => {
                             })
                 
                             const SaveUserData = await NewUser.save()
+                            console.log("Data Insert Successfully.")
                             res.render("login")
                         }
                     })
