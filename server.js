@@ -2,6 +2,7 @@ const express = require('express')
 const path = require('path')
 const hbs = require('hbs')
 const app = express()
+const port = process.env.PORT || 8000
 
 app.set('view engine', 'hbs')
 app.use(express.static(path.join(__dirname, 'public')))
@@ -20,4 +21,4 @@ app.get('/Login', (req,res) => {
     res.render("login")
 })
 
-app.listen(8080)
+app.listen(port)
