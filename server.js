@@ -122,4 +122,6 @@ function verifyToken(req, res, next){
     }
 }
 
-app.listen(8080)
+const port = process.env.PORT || 8000
+
+app.listen(port)
