@@ -44,7 +44,8 @@ app.post('/Register', (req, res) => {
                         if(err) {
                             throw err
                         } else {
-                            const NewUser = new UserDetails({
+                            console.log(hash)
+                            /*const NewUser = new UserDetails({
                                 name: req.body.name,
                                 email: req.body.email,
                                 password: hash,
@@ -53,7 +54,7 @@ app.post('/Register', (req, res) => {
                 
                             const SaveUserData = await NewUser.save()
                             console.log("Data Insert Successfully.")
-                            res.render("login")
+                            res.render("login")*/
                         }
                     })
                 }
